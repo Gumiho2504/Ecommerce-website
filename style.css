@@ -798,7 +798,8 @@ footer .copyright{
     width: 50%;
     margin-bottom: 30px;
 }
-#coupon h3{
+#coupon h3,
+#subtotal h3{
     padding-bottom: 15px;
 }
 #coupon input{
@@ -808,7 +809,8 @@ footer .copyright{
     margin-right: 10px;
     border: 1px solid #e2e9e1;
 }
-#coupon button{
+#coupon button,
+#subtotal button{
     background-color: #088178;
     color: #fff;
     padding: 12px 20px;
@@ -829,7 +831,6 @@ footer .copyright{
     border: 1px solid #e1e1e1;
     padding: 10px;
     font-size: 13px;
-    text-align: center;
 }
 /* Start Media Query */
 /* ####################################
@@ -919,6 +920,10 @@ footer .copyright{
     }
     #form-detail form {
         width: 50%;
+    }
+    /* cart page */
+    #cart {
+        overflow-x: auto;
     }
 }
 
@@ -1045,6 +1050,17 @@ footer .copyright{
     }
     #form-detail .people{
         padding: 0 20px;
+    }
+    /* Cart page */
+    #cart-add {
+        flex-direction: column;
+    }
+    #coupon {
+        width: 100%;
+    }
+    #subtotal {
+        width: 100%;
+        padding: 20px;
     }
 }
 
